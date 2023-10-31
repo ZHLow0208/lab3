@@ -28,3 +28,48 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+def test_req_01():
+    result = []
+    input_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    test_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+
+    assert (result == test_arr)
+
+def test_req_02():
+    result = []
+    input_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    test_arr = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+
+    assert (result == test_arr)
+
+def test_req_03():
+    result = []
+    input_arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    test_arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+
+    assert (result == 1)
+
+def test_req_04():
+    result = []
+    input_arr = []
+    test_arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+
+    assert (result == 0)
+
+def test_req_05():
+    result = []
+    input_arr = ["1", 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    test_arr = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+
+    assert (result == 2)

@@ -15,5 +15,5 @@ def test_bmi_over_weight():
 def test_bmi_under_weight():
     weight = 40
     height = 1.73
-    result = bmi.calculate_bmi(height,weight)
+    result = bmi.calculate_bmi(weight, height)
     assert (result == -1)
