@@ -1,3 +1,4 @@
+import statistics as st
 # Define a dictionary to store employee information
 employee_data = [
     {"name": "John", "age": 30, "department": "Sales", "salary": 50000},
@@ -23,15 +24,18 @@ def calculate_average_salary():
     average = 0
 
     #add your implementation to calculate here
-
-
+    for elem in employee_data:
+        total += elem['salary']
+    average = total/len(employee_data)
     return average
 
 def get_employees_by_dept(department):
     result = []
 
     # Add your implementation from here
-
+    for elem in employee_data:
+        if elem['department'] == department:
+            result.append(elem)
 
     return result
 
