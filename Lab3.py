@@ -26,7 +26,7 @@ def bubble_sort(arr, sorting_order):
 
                 if sorting_order == SORT_ASCENDING:
                     if arr_result[j] > arr_result[j + 1]:
-                        arr_result[j], arr_result[j + 1] = arr_result[j + 1], arr_result[j]
+                        arr_result[j], arr_result[j + 1] = arr_result[j + 1], arr_result[j]#switch the location
 
 
                 elif sorting_order == SORT_DESCENDING:
